@@ -1,10 +1,7 @@
-'use strict';
-
 let cursify = document.getElementById('cursify');
 let loader = document.getElementById('loader');
 
 loader.style.visibility = "hidden";
-
 cursify.onclick = function(element) {
 	cursify.style.visibility = "hidden";
 	loader.style.visibility = "visible";
