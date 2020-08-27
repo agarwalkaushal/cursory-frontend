@@ -7,22 +7,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px;
-        width: 100px;
         },
-      .button {
-        height: 80px;
-        width: 80px;
-        outline: none;
-        align-self: 'center';
-      }
     </style>
   </head>
-  <body>
+  <body style="margin:0;overflow:hidden;background-image: linear-gradient(-45deg, #FFFFFF, #ede3fe);height: 130px;width: 250px;">
+    <div style="flex-direction: row;display: flex;justify-content: center;margin: 10px">
+        <img src="images/icon48.png" style="margin-right:20px;" width="48" height="48">
+        <h1>Cursory</h1>
+        <strong>v1</strong>
+      </div>
     <div class="center">
-      <Text>v1</Text>
       <br>
-      <button id="cursify" class="button">Cursify now!</button>
+      <button style="border-radius: 5px;padding: 5px 8px;background-color: #575757;color: #e3d3fe;border: none;" id="cursify">Cursify now!</button>
       <Text id="loader">Please wait ...</Text>
     </div>
     <script src="popup.js"></script>

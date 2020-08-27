@@ -10,6 +10,7 @@ cursify.onclick = function(element) {
 		const complete_url = 'https://cursory-nlp.herokuapp.com/highlights?url='+url
 		fetch(complete_url).then(r => r.text()).then(result => {
 			loader.innerHTML = "Done!"
+			window.close();
 			chrome.runtime.sendMessage({message: 'showcontentdialog', result: result});
 		});
 	})
